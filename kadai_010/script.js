@@ -148,7 +148,7 @@ $(function () {
     }
 
     //都道府県のチェック
-    if ($('#prefecture').val() == '') {
+    if ($('#prefecture').prop('value') == false) {
       //エラーあり
       $('#prefecture').css('background-color', '#f79999');
       error = true;
