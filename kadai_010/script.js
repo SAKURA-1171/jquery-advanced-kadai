@@ -78,11 +78,11 @@ $(function () {
   $('#agree').click(function () {
     inputCheck();
   });
-
+  
   //お問い合わせフォームの入力チェック
   function inputCheck() {
-    // console.log('inputCheck関数の呼び出し');
-    
+    // console.log('message');
+
     //エラーのチェック結果
     let result;
 
@@ -126,8 +126,8 @@ $(function () {
     }
 
     //メールアドレスのチェック
-    if ($('#email').val() == '' || 
-      $('#email').val().indexOf('@') == -1 || 
+    if ($('#email').val() == '' ||
+      $('#email').val().indexOf('@') == -1 ||
       $('#email').val().indexOf('.') == -1) {
       //エラーあり
       $('#email').css('background-color', '#f79999');
@@ -139,7 +139,7 @@ $(function () {
     }
 
     //電話番号のチェック(未入力はOK、未入力でない場合は-が必要)
-    if ($('#tel').val() != '' && 
+    if ($('#tel').val() != '' &&
       $('#tel').val().indexOf('-') == -1) {
       //エラーあり
       $('#tel').css('background-color', '#f79999');
@@ -167,6 +167,8 @@ $(function () {
       message += '個人情報の取り扱いについてご同意いただける場合は、チェックボックスにチェックしてください。\n';
     }
 
+    
+
     //エラーの有無で送信ボタンを切り替え
     if (error == true) {
       $('#submit').attr('src', 'images/button-submit.png');
@@ -178,6 +180,12 @@ $(function () {
     result = {
       error: error,
       message: message
+    }
+
+    if (error == true) {
+      alert(message);
+    } else {
+      
     }
 
     //戻り値としてエラーがあるかどうかを返す
