@@ -18,12 +18,12 @@ $(function () {
   $('.carousel').slick({
     autoplay: true,
     dots: true,
-    infinity: true,
+    infinite: true,
     autoplaySpeed: 5000,
     arrows: false,
   });
 
-  //AjaxでSTAYIC FORMSにデータを送信
+  //AjaxでSTATIC FORMSにデータを送信
   $('#submit').on('click', function (event) {
     //formタグによる送信を拒否
     event.preventDefault();
@@ -44,12 +44,12 @@ $(function () {
         dataType: 'json',
         data: $('#form').serialize(),
         success: function (result) {
-          alert('お問い合わせを送信しました。')
+          alert('お問い合わせを送信しました。');
         },
         error: function (xhr, resp, text) {
-          alert('お問い合わせを送信できませんでした。')
+          alert('お問い合わせを送信できませんでした。');
         }
-      })
+      });
     } else {
       //エラーメッセージを表示する
       alert(message);
@@ -75,7 +75,7 @@ $(function () {
   $('#prefecture').blur(function () {
     inputCheck();
   });
-  $('#agree').blur(function () {
+  $('#agree').click(function () {
     inputCheck();
   });
 
@@ -126,7 +126,9 @@ $(function () {
     }
 
     //メールアドレスのチェック
-    if ($('#email').val() == '' || $('#email').val().indexOf('@') == -1 || $('#email').val().indexOf('.') == -1) {
+    if ($('#email').val() == '' || 
+      $('#email').val().indexOf('@') == -1 || 
+      $('#email').val().indexOf('.') == -1) {
       //エラーあり
       $('#email').css('background-color', '#f79999');
       error = true;
@@ -137,7 +139,8 @@ $(function () {
     }
 
     //電話番号のチェック(未入力はOK、未入力でない場合は-が必要)
-    if ($('#tel').val() != '' && $('#tel').val().indexOf('-') == -1) {
+    if ($('#tel').val() != '' && 
+      $('#tel').val().indexOf('-') == -1) {
       //エラーあり
       $('#tel').css('background-color', '#f79999');
       error = true;

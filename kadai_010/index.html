@@ -4,14 +4,14 @@
 <head>
     <title>SocialTech</title>
     <meta charset="utf-8">
-    <meta description="SocialTechはEdTech業界のリーディングカンパニーを目指します。">
+    <meta name="description" content="SocialTechはEdTech業界のリーディングカンパニーを目指します。">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
 
     <!-- Add the slick-theme.css if you want default styling -->
-    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css">
     <!-- Add the slick-theme.css if you want default styling -->
-    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css" />
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css">
 </head>
 
 <body>
@@ -77,17 +77,17 @@
                 <div class="carousel">
                     <div>
                         <a href="index.html">
-                        <img class="carouselImg" src="images/carousel1.png">
+                            <img class="carouselImg" src="images/carousel1.png">
                         </a>
                     </div>
                     <div>
                         <a href="mission.html">
-                        <img class="carouselImg" src="images/carousel2.png">
+                            <img class="carouselImg" src="images/carousel2.png">
                         </a>
                     </div>
                     <div>
                         <a href="product.html">
-                        <img class="carouselImg" src="images/carousel3.png">
+                            <img class="carouselImg" src="images/carousel3.png">
                         </a>
                     </div>
                 </div>
@@ -108,10 +108,9 @@
                         <h3>S2DGsの実現</h3>
                         <p>国連が掲げる「Sustainable Development
                             Goals（持続可能な開発目標）」に含まれる17つのグローバル目標のうち、以下の5つの目標の実現をミッションとしてサービスを展開しています。</p>
-                        <a href="mission.html">
-                            <!-- <img src="images/button-more.png" alt="もっとみる"> -->
+                        <div href="mission.html">
                             <img class="button-more" src="images/button-more.png" alt="もっとみる">
-                        </a>
+                        </div>
                     </div>
                 </div>
             </section>
@@ -159,7 +158,6 @@
                 </div>
                 <div>
                     <a id="product-more" href="product.html">
-                        <!-- <img src="images/button-more.png" alt="もっとみる"> -->
                         <img class="button-more" src="images/button-more.png" alt="もっとみる">
                     </a>
                 </div>
@@ -213,8 +211,6 @@
                                 <span class="culture-jp">自己実現</span>
                             </td>
                         </tr>
-                        <td>
-                        </td>
                         <td>
                             クオーター毎に経営・部署・個人ごとにOKRを設定し個人のキャリアと
                             会社の目指す方向の軌道修正を行っております。
@@ -320,7 +316,6 @@
                 <h2 class="index-h2">CONTACT</h2>
                 <h3>お問い合わせ</h3>
                 <!-- STATIC FORMSのフォームタグ -->
-                <!-- <form action="https://api.staticforms.xyz/submit" method="post"> -->
                 <form id="form">
                     <input type="text" name="honeypot" style="display:none">
                     <!-- STATIC FORMSのアクセスキー -->
@@ -345,7 +340,8 @@
                             <label class="contact-label">フリガナ<span class="contact-span">必須</span></label>
                         </div>
                         <div>
-                            <input id="furigana" type="text" name="hurigana" placeholder="入力してください" class="contact-textbox">
+                            <input id="furigana" type="text" name="hurigana" placeholder="入力してください"
+                                class="contact-textbox">
                         </div>
                     </div>
                     <div>
@@ -369,7 +365,8 @@
                             <label class="contact-label">お問い合わせ内容<span class="contact-span">必須</span></label>
                         </div>
                         <div>
-                            <textarea id="message" class="contact-textarea " placeholder="入力してください" name="message"></textarea>
+                            <textarea id="message" class="contact-textarea " placeholder="入力してください"
+                                name="message"></textarea>
                         </div>
                     </div>
                     <div>
@@ -504,10 +501,11 @@
             </div>
         </footer>
     </main>
+    
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"
+        integrity="sha256-oP6HI9z1XaZNBrJURtCoUT5SUnxFr8s3BzRl+cbzUq8=" crossorigin="ananymous"></script>
 
-    <script src="https://code.jquery.com/jquery-3.6.4.min.js" integrity="sha256-oP6HI9z1XaZNBrJURtCoUT5SUnxFr8s3BzRl+cbzUq8=" crossorigin="ananymous"></script>
-
-    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
 
     <script src="script.js"></script>
 </body>
